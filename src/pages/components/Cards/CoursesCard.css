@@ -1,0 +1,63 @@
+.coursesCard {
+  margin-top: 8vw;
+}
+.exploreCoursesCard {
+  display: flex;
+  gap: 5.35vw;
+  overflow-x: hidden;
+  padding: 0 2vw 0 2vw;
+  margin-bottom:20px;
+}
+.coursesCardHeading {
+  font-size: 2.2vw;
+  font-weight: 700;
+  color: black;
+  display: flex;
+  justify-content: start;
+  padding: 2vw;
+}
+.iot {
+  background-image: url("iot.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30vw;
+  width: 20vw;
+  opacity: 0.9;
+  transition: all 0.8s;
+  animation: fadeIn 1s;
+}
+.iot:hover {
+  opacity: 1;
+  scale: 1.1;
+}
+.python {
+  background-image: url("python.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30vw;
+  width: 20vw;
+  opacity: 0.9;
+  transition: all 0.8s;
+  animation: fadeIn 1s;
+}
+.python:hover {
+  opacity: 1;
+  scale: 1.1;
+}
+.robotics {
+  background-image: url("robotics.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30vw;
+  width: 20vw;
+  opacity: 0.9;
+  transition: all 0.8s;
+  animation: fadeIn 1s;
+}
+.robotics:hover {
+  opacity: 1;
+  scale: 1.1;
+}

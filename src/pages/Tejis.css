@@ -1,0 +1,98 @@
+.tejisContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.maintejisContainer {
+  margin: 1vw 2vw 8vw 2vw;
+  background-color: black;
+  height: 25vw;
+  width: 96%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("tejisbanner.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.bannerInfoContainer {
+  height: 10vw;
+  width: 70vw;
+  display: flex;
+  position: relative;
+  top: 11vw;
+  left: -8vw;
+}
+.profile {
+  background: white;
+  background-opacity: 0.5;
+  height: 14vw;
+  width: 14vw;
+  border: 2px solid red;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1vw 0 1vw;
+}
+.profileInfo {
+  height: 10vw;
+  width: 50vw;
+  position: relative;
+  top: 7vw;
+  margin-left: 1vw;
+}
+.profile img {
+  height: 8vw;
+  width: 8vw;
+}
+.secondtejisContainer {
+  margin: 1vw 2vw 1vw 2vw;
+  display: flex;
+  gap: 2vw;
+}
+.leftContainer1 {
+  height: 20vw;
+  width: 35vw;
+  background-image: url("leftcontainer.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  transition: all 0.8s;
+}
+.leftContainer1:hover {
+  scale: 1.1;
+}
+.rightContainer1 {
+  height: 20vw;
+  width: 60vw;
+  text-align: justify;
+}
+.thirdtejisContainer {
+  margin: 2vw 2vw 1vw 2vw;
+  display: flex;
+  gap: 2vw;
+}
+.rightContainer2 {
+  height: 20vw;
+  width: 35vw;
+  background-image: url("rightbanner.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  transition: all 0.8s;
+}
+.rightContainer2:hover {
+  scale: 1.1;
+}
+.leftContainer2 {
+  height: 20vw;
+  width: 60vw;
+  text-align: justify;
+}
+.qr {
+  width: 20vw;
+  background-size: contain;
+  background-image: url("ss.png");
+}

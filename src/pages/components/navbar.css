@@ -1,18 +1,48 @@
+.upperNavbarContainer {
+  display: flex;
+  align-items: center;
+  padding: 1vw 2vw 1vw 2vw;
+}
+.upperNavbarContainer h1 {
+  font-style: italic;
+  font-size: 2.8vw;
+}
 .mainNavbarContainer {
-  height: 80px;
+  height: 20vw;
   background-color: white;
   display: flex;
-  align-items: end;
-  justify-content: start;
+  flex-direction: column;
+  gap: 1vw;
+  align-items: center;
+  justify-content: center;
+  background-image: url("BG Group.svg ");
+  background-size: cover;
+  background-position: center-top;
+  border-radius: 10px;
+  margin: 0 2vw 0 2vw;
 }
 
-.firstNavbarContainer h1 {
+.firstNavbarContainer {
   font-style: italic;
   padding-left: 30px;
+  height: 10vh;
+  width: 60vw;
+  background-image: url("Main.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 40%;
+  /* background: black; */
 }
 
-.mainNavbarContainer svg {
-  position: relative;
-  top: -27px;
-  left: -62%;
+h5 {
+  font-size: 1.5vw;
+  color: white;
+}
+
+@media (max-width: 1050px) {
+  .firstNavbarContainer {
+    height: 8vw;
+    width: 50vw;
+  }
 }

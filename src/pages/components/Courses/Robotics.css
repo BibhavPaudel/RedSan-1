@@ -1,0 +1,115 @@
+.pythonMainContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.firstRoboticsContainer {
+  width: 96%;
+  height: 40vw;
+  margin: 1vw 2vw 1vw 2vw;
+}
+.firstRoboticsContainer h2 {
+  font-size: 3.5vw;
+  font-weight: 700;
+}
+.courseCardContainer {
+  width: 100%;
+  height: 25vw;
+  margin: auto;
+  margin-top: 1vw;
+  display: flex;
+  align-items: center;
+  background-image: url("iot banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+.courseCard {
+  width: 90%;
+  height: 20vw;
+}
+.courseCard {
+  background-image: url("trivia.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20vw;
+  width: 20vw;
+  opacity: 0.9;
+  transition: all 0.8s;
+}
+.courseCard:hover {
+  opacity: 1;
+  scale: 1.1;
+}
+.courseCardInfo {
+  width: 90%;
+  height: 20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  text-align: justify;
+  padding: 0 1.5vw 0 1.5vw;
+}
+.courseCardInfo h3 {
+  font-size: 2.2vw;
+  text-decoration: none;
+}
+.courseCardInfo h5 {
+  font-size: 1.5vw;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+hr {
+  margin: 5vw 2vw 5vw 2vw;
+  height: 2px;
+  background-color: #e2e2e2;
+  border: none;
+}
+.campInfoContanier {
+  height: 10vw;
+  width: 60vw;
+  margin: 2vw 0 2vw 0;
+}
+
+.formContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4vw;
+  margin: 1vw 2vw 1vw 2vw;
+  flex-direction: row;
+}
+.qrRobotics {
+  width: 15vw;
+  height: 15vw;
+  background-color: lightgreen;
+  background-size: contain;
+  background-image: url("ss.png");
+}
+.profileRobotics {
+  background: white;
+  background-opacity: 0.5;
+  height: 14vw;
+  width: 14vw;
+  border: 2px solid red;
+  border-radius: 50%;
+  display: flex;
+  position: relative;
+  top: 12vw;
+  left: 2vw;
+  align-items: center;
+  justify-content: center;
+}
+.profileInfoRobotics {
+  height: 10vw;
+  width: 50vw;
+  position: relative;
+  top: 18vw;
+  padding-left: 3vw;
+}
+.profileRobotics img {
+  width: 8vw;
+}

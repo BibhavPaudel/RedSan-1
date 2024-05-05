@@ -4,10 +4,11 @@ import Index from "./pages/Index";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { useSelector } from "react-redux";
-import LaunchEvent from "./pages/LaunchEvent";
-import FreeCoupon from "./pages/FreeCoupon";
-import TreasureHunt from "./pages/TreasureHunt";
-import Coupon from "./pages/Coupon";
+import Tejis from "./pages/Tejis";
+import IOT from "./pages/components/Courses/IOT";
+import Python from "./pages/components/Courses/Python";
+import Robotics from "./pages/components/Courses/Robotics";
+import SpinTheWheel from "./pages/components/Games/SpinTheWheel";
 
 function App() {
   const loginState = useSelector((state) => state.login);
@@ -19,10 +20,11 @@ function App() {
             path="/"
             element={loginState.length === 0 ? <Login /> : <Index />}
           ></Route>
-          <Route path="/launchevent" element={<LaunchEvent />}></Route>
-          <Route path="/freeCoupons" element={<FreeCoupon />}></Route>
-          <Route path="/treasureHunt" element={<TreasureHunt />}></Route>
-          <Route path="/coupons" element={<Coupon />}></Route>
+          <Route path="/tejis" element={<Tejis />}></Route>
+          <Route path="/IOT" element={<IOT />}></Route>
+          <Route path="/python" element={<Python />}></Route>
+          <Route path="/robotics" element={<Robotics />}></Route>
+          <Route path="/spinthewheel" element={<SpinTheWheel />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

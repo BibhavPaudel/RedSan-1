@@ -1,0 +1,72 @@
+.exploreGamesCard {
+  display: flex;
+  gap: 5.35vw;
+  overflow-x: hidden;
+  padding: 0 2vw 0 2vw;
+}
+.gamesCardHeading {
+  font-size: 2.2vw;
+  font-weight: 700;
+  color: black;
+  display: flex;
+  justify-content: start;
+  padding: 2vw;
+  padding-bottom: 0;
+}
+.trivia {
+  background-image: url("trivia.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30vw;
+  width: 20vw;
+  opacity: 0.9;
+  transition: all 0.8s;
+}
+.trivia:hover {
+  opacity: 1;
+  scale: 1.1;
+}
+.spinthewheel {
+  background-image: url("spinthewheel.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30vw;
+  width: 20vw;
+  opacity: 0.9;
+  transition: all 0.8s;
+}
+.spinthewheel:hover {
+  opacity: 1;
+  scale: 1.1;
+}
+.thisorthat {
+  background-image: url("3.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30vw;
+  width: 20vw;
+  opacity: 0.9;
+  transition: all 0.8s;
+}
+.thisorthat:hover {
+  opacity: 1;
+  scale: 1.1;
+}
+
+.treasurehunt {
+  background-image: url("treasureHunt.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30vw;
+  width: 20vw;
+  opacity: 0.9;
+  transition: all 0.8s;
+}
+.treasurehunt:hover {
+  opacity: 1;
+  scale: 1.1;
+}
