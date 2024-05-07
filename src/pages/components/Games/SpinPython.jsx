@@ -30,7 +30,9 @@ function SpinPython() {
   // var box = document.getElementById('box');
   function myfunction() {
     setSpinning(true);
-    refbox.current.style.transform = `rotate(${deg * 47}deg)`;
+    console.log(deg);
+    const degtorotate = (deg+(deg*45)) + 360 * 4;
+    refbox.current.style.transform = `rotate(${degtorotate}deg)`;
     // var element = document.getElementById('mainbox');
     mainrefbox.current.classList.remove("animate");
     setTimeout(function () {
