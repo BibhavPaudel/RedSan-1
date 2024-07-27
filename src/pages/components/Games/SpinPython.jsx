@@ -102,6 +102,10 @@ function SpinPython() {
   const gohome = () => {
     nav("/tejis");
   };
+  const clear = () => {
+    localStorage.removeItem("claimed");
+    localStorage.removeItem("showRes");
+  };
 
   return (
     // <>
@@ -310,7 +314,8 @@ function SpinPython() {
               <button
                 className="zjyada"
                 onClick={() => {
-                  gohome();
+                  // gohome();
+                  clear();
                 }}
               >
                 {" "}
