@@ -221,111 +221,108 @@ function SpinPython() {
     // </>
 
     <>
-    <div className="spinnerbg">
-    {localStorage.getItem("claimed") === "true" ? (
-            <div className="showres">
-              <div className="resultBox">
-                {localStorage.getItem("loginuser")}
-                <span>CID {localStorage.getItem("cid")}</span>{" "}
-              </div>
-              <div className="resultBox1">
-                RS {localStorage.getItem("coupon")}
-              </div>
+      <div className="spinnerbg">
+        {localStorage.getItem("claimed") === "true" ? (
+          <div className="showres">
+            <div className="resultBox">
+              {localStorage.getItem("loginuser")}
+              <span>CID {localStorage.getItem("cid")}</span>{" "}
             </div>
-          ) : null}
+            <div className="resultBox1">
+              RS {localStorage.getItem("coupon")}
+            </div>
+          </div>
+        ) : null}
 
-           {/* spinner */}
-           {localStorage.getItem("claimed") === "true" ? null : (
-            <>
-              <div className="whitetext">
-                hey {localStorage.getItem("loginuser")} Spin the wheel to Win
-                Coupon
-              </div>
-              <div id="mainbox" ref={mainrefbox} className="mainbox">
-                <img class="image-spinner" src={spinFrame} alt="" />
-                <div id="box" ref={refbox} className="box">
-                  <div className="box1">
-                    <span className="span1">
-                      <b>200 RS OFF</b>
-                    </span>
-                    <span className="span2">
-                      <b>500 RS OFF</b>
-                    </span>
-                    <span className="span3">
-                      <b>1000 RS OFF</b>
-                    </span>
-                    <span className="span4">
-                      <b>500 RS OFF</b>
-                    </span>
-                  </div>
-                  <div className="box2">
-                    <span className="span1">
-                      <b>750 RS OFF</b>
-                    </span>
-                    <span className="span2">
-                      <b>0 RS OFF</b>
-                    </span>
-                    <span className="span3">
-                      <b>200 RS OFF</b>
-                    </span>
-                    <span className="span4">
-                      <b>0 RS OFF</b>
-                    </span>
-                  </div>
+        {/* spinner */}
+        {localStorage.getItem("claimed") === "true" ? null : (
+          <>
+            <div className="whitetext">
+              hey {localStorage.getItem("loginuser")} Spin the wheel to Win
+              Coupon
+            </div>
+            <div id="mainbox" ref={mainrefbox} className="mainbox">
+              <img class="image-spinner" src={spinFrame} alt="" />
+              <div id="box" ref={refbox} className="box">
+                <div className="box1">
+                  <span className="span1">
+                    <b>200 RS OFF</b>
+                  </span>
+                  <span className="span2">
+                    <b>500 RS OFF</b>
+                  </span>
+                  <span className="span3">
+                    <b>1000 RS OFF</b>
+                  </span>
+                  <span className="span4">
+                    <b>500 RS OFF</b>
+                  </span>
+                </div>
+                <div className="box2">
+                  <span className="span1">
+                    <b>750 RS OFF</b>
+                  </span>
+                  <span className="span2">
+                    <b>0 RS OFF</b>
+                  </span>
+                  <span className="span3">
+                    <b>200 RS OFF</b>
+                  </span>
+                  <span className="span4">
+                    <b>0 RS OFF</b>
+                  </span>
                 </div>
               </div>
-            </>
-          )}
-          {/* spin button*/}
-          {localStorage.getItem("showRes") &
-          !localStorage.getItem("coupon") ? null : (
+            </div>
+          </>
+        )}
+        {/* spin button*/}
+        {localStorage.getItem("claimed") === "true" ? null : (
+          <button
+            className="spin"
+            onClick={() => {
+              myfunction();
+            }}
+          >
+            SPIN
+          </button>
+        )}
+        {/* claim button*/}
+        {coupon ? (
+          <button
+            className="claim"
+            onClick={() => {
+              claimCoupon();
+            }}
+          >
+            Claim Coupon
+          </button>
+        ) : null}
+
+        {localStorage.getItem("claimed") === "true" ? (
+          <>
+            <div className="notebox">
+              Please take a Screenshot of the coupon
+            </div>
+            <div className="notebox">
+              Pay the discounted price and keep the coupon for reference !
+            </div>
+            <div className="notebox">
+              Contact +919664365954 for any query !{" "}
+            </div>
             <button
-              className="spin"
+              className="zjyada"
               onClick={() => {
-                myfunction();
+                // gohome();
+                clear();
               }}
             >
-              SPIN
+              {" "}
+              GO HOME{" "}
             </button>
-          )}
-          {/* claim button*/}
-          {coupon ? (
-            <button
-              className="claim"
-              onClick={() => {
-                claimCoupon();
-              }}
-            >
-              Claim Coupon
-            </button>
-          ) : null}
-
-{localStorage.getItem("claimed") === "true" ? (
-            <>
-              <div className="notebox">
-                Please take a Screenshot of the coupon
-              </div>
-              <div className="notebox">
-                Pay the discounted price and keep the coupon for reference !
-              </div>
-              <div className="notebox">
-                Contact +919664365954 for any query !{" "}
-              </div>
-              <button
-                className="zjyada"
-                onClick={() => {
-                  // gohome();
-                  clear();
-                }}
-              >
-                {" "}
-                GO HOME{" "}
-              </button>
-            </>
-          ) : null}
-        
-    </div>
-
+          </>
+        ) : null}
+      </div>
     </>
   );
 }
