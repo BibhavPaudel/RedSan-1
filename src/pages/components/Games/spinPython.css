@@ -35,6 +35,15 @@
   background-image: url("Frame6.png");
   min-height: 100vh;
   background-size: cover;
+  background-position: center center;
+}
+.image-spinner {
+  position: absolute;
+  height: 600px;
+  width: 600px;
+  left: -10.8vw;
+  top: -6.5vh;
+  z-index: 2;
 }
 
 .mainbox {
@@ -64,11 +73,13 @@
   overflow: hidden;
   transition: all ease 5s;
 }
+
 span {
   width: 50%;
   height: 50%;
   display: inline-block;
   position: absolute;
+  color: white;
 }
 .span1 {
   clip-path: polygon(0 92%, 100% 50%, 0 8%);
@@ -116,7 +127,7 @@ span {
   transform: rotate(-135deg);
 }
 span b {
-  font-size: 24px;
+  font-size: 28px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -128,20 +139,21 @@ span b {
   font-size: 20px;
 }
 .zjyada {
-  position:relative;
+  position: relative;
   z-index: 2 !important;
 }
 
 .spin {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  z-index: 0;
+  top:47vh;
+  left: 50vw;
   transform: translate(-50%, -50%);
   width: 75px;
   height: 75px;
   border-radius: 50%;
   border: 4px solid #fff;
-  background-color: #001aff;
+  background-color: #f6a701;
   color: #fff;
   box-shadow: 0 5px 20px #000;
   font-weight: bold;

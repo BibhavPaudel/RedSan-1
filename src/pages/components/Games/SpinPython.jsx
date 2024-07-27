@@ -7,6 +7,7 @@ import { useSelector } from "react-redux";
 import axios from "axios";
 import { useDispatch } from "react-redux";
 import { addUser } from "../../store/userSlice";
+import spinFrame from "../../images/spinframe2.png";
 
 function SpinPython() {
   const nav = useNavigate();
@@ -31,7 +32,7 @@ function SpinPython() {
   function myfunction() {
     setSpinning(true);
     console.log(deg);
-    const degtorotate = (deg+(deg*45)) + 360 * 4;
+    const degtorotate = deg + deg * 45 + 360 * 4;
     refbox.current.style.transform = `rotate(${degtorotate}deg)`;
     // var element = document.getElementById('mainbox');
     mainrefbox.current.classList.remove("animate");
@@ -129,7 +130,9 @@ function SpinPython() {
                 Coupon
               </div>
               <div id="mainbox" ref={mainrefbox} className="mainbox">
+                <img class="image-spinner" src={spinFrame} alt="" />
                 <div id="box" ref={refbox} className="box">
+                  
                   <div className="box1">
                     <span className="span1">
                       <b>200 RS OFF</b>
@@ -163,7 +166,7 @@ function SpinPython() {
             </>
           )}
           {/* spin button*/}
-          {localStorage.getItem("showRes") &&
+          {localStorage.getItem("showRes") &!
           localStorage.getItem("coupon") ? null : (
             <button
               className="spin"
