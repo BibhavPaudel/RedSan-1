@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { useSelector } from "react-redux";
 import Tejis from "./pages/Tejis";
+import Explore from "./pages/Explore";
 import IOT from "./pages/components/Courses/IOT";
 import Python from "./pages/components/Courses/Python";
 import Robotics from "./pages/components/Courses/Robotics";
@@ -25,6 +26,7 @@ function App() {
           <Route path="/python" element={<Python />}></Route>
           <Route path="/robotics" element={<Robotics />}></Route>
           <Route path="/spinthewheel" element={<SpinTheWheel />}></Route>
+          <Route path="/explore" element={<Explore />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
